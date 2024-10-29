@@ -1,0 +1,183 @@
+
+<html>
+    
+  
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>BDiptv Player</title>
+      </head>
+  
+  <body style="margin-top: -19px;margin-left: -26px;padding: 1px;margin-right: -24px;background: black;overflow:hidden;top: 14px;" oncontextmenu="return false;">
+      <div class="player_div"  align="center"> </body> 
+  
+   <html>
+       
+  
+  <link href="player-vds/videos-js.css" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="player-vds/vsg-skin.css">
+  <link rel="stylesheet" href="player-vds/videojs.ima.css" />
+  <link rel="stylesheet" href="player-vds/videojs.ads.css" />
+  
+  <script src="player-vds/video.min.js"></script>
+  <script src="player-vds/video.js"></script>
+  <script src="player-vds/videojs-hlsjs-plugin.js"></script>
+  <script src="player-vds/videojs-hlsjs-plugins.js"></script>
+  <script src="player-vds/vjs-level.js"></script>
+  <script src="player-vds/ima3.js"></script>
+  <script src="player-vds/videojs.ads.min.js"></script>
+  <script src="player-vds/videojs.ima.js"></script>
+  
+  
+  <style type="text/css">
+          .video-js {
+              font-size: 0.9rem;
+          }
+      .container {
+      max-width: 100%;}
+  
+      .video, #player_1535088037, .video-js, .vjs-default-skin
+      {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; !important;
+      z-index: 1; 
+      }
+      .example-video-container {
+      display: inline-block;
+      }
+   </style>
+    
+  
+  
+    <body class="bg-light">
+      <div class="container">
+  
+  <div class="my-5 embed-responsive embed-responsive-16by9">
+  <video id="player_1535088037" class="embed-responsive-item video-js vjs-default-skin" width="auto" height="auto" autoplay controls>
+      
+  
+  
+  <div id="player_1535088037">
+  
+  <script type="text/javascript">
+  
+  
+  var player = videojs('player_1535088037');
+  player.src({
+    src: 'http://103.159.4.38:9090/SPORTS-7/tracks-v1a1/mono.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvMTcvMjAyMCAxMjowOTo0OCBQTSZoYXNoX3ZhbHVlPWJGSmVEK1IwUXJ0TGtTSFVXOHpOdnc9PSZ2YWxpZG1pbnV0ZXM9NQ==',
+    type: 'application/x-mpegURL',
+    autoplay: 'true',
+    loop:'true',
+    preload: 'true',
+  });
+  
+  
+  var myVideo = document.getElementById("player_1535088037");
+  if (myVideo.addEventListener) {
+      myVideo.addEventListener('contextmenu', function(e) {
+          // alert("You've tried to open context menu"); //here you draw your own menu
+  e.preventDefault();
+      }, false);
+  } else {
+      myVideo.attachEvent('oncontextmenu', function() {
+          window.event.returnValue = false;
+      });
+  }
+    var player = videojs('player_1535088037');
+  
+          player.qualityPickerPlugin();
+  var VjsButton = videojs.getComponent("Button");
+  var customButton = videojs.extend(VjsButton, {
+             constructor: function(player, options){
+              VjsButton.call(this, player, options);
+                  this.controlText("Powered By BDIPTV");
+             },
+             handleClick: function() {
+                 window.open("http://bdiptv.com/");
+             },
+             buildCSSClass: function() {
+              return "video-js-logo";
+             }
+          });
+          videojs.registerComponent("customButton", customButton);
+          player.getChild("controlBar").addChild("customButton", {});
+  var player = videojs('player_1535088037');
+          var options = {	
+            id: 'player_1535088037',
+            adTagUrl: 'http://bdiptv.stream'
+          };
+          
+  player.ima(options);
+  
+  
+  
+  // Remove controls from the player on iPad to stop native controls from stealing
+  // our clickplayer.ima.initializeAdDisplayContainer(); player.ima.requestAds(); player.play();;
+  var contentPlayer =  document.getElementById('player_1535088037');
+  if ((navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/Android/i)) &&
+      contentPlayer.hasAttribute('controls')) {
+    contentPlayer.removeAttribute('controls');
+  }
+  
+  // Initialize the ad container when the video player is clicked, but only the
+  // first time it's clicked.
+  var startEvent = 'click';
+  if (navigator.userAgent.match(/iPhone/i) ||
+      navigator.userAgent.match(/iPad/i) ||
+      navigator.userAgent.match(/Android/i)) {
+    startEvent = 'touchend';
+  }
+  
+  //player.ima.initializeAdDisplayContainer(); 
+  //player.ima.requestAds(); 
+  //player.muted(true);
+  //player.play();
+  player.ima.initializeAdDisplayContainer(); player.ima.requestAds(); player.play();
+  
+  
+  </script>
+  
+  
+  </div>
+   </span>
+          </div>
+       
+  
+          </div>
+  <div style="display:none">
+  
+  </div> 
+      </body>
+  
+ 
+  </html>
+  
+  
+   </span>
+          </div><div class="video_ads_overdiv" id="video_ads_overdiv">
+          </div>
+  
+  
+  <div style="display:none">
+  
+  
+  </div> 
+  
+      </body>
+  
+  </html>
+  <script language="javascript">
+  document.onmousedown=disableclick;
+  status="Right Click Disabled";
+  Function disableclick(event)
+  {
+    if(event.button==2)
+     {
+       alert(status);
+       return false;    
+     }
+  }
+  </script>

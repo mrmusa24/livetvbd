@@ -1,0 +1,112 @@
+
+<!-- Mirrored from c1live.com/tv/bd-mytv.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Nov 2020 12:11:17 GMT -->
+<head>
+	<link rel="stylesheet" href="../../cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css"/>
+	
+	<script src="../../cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
+	
+</head>
+	
+<style>	
+
+.player{
+		width:100%;
+		height:100%;
+		object-fit: fill;
+		}
+.navbar-default {
+    box-shadow: 6px 2px 8px #463a39;
+}
+.tv_full {
+    background : #016938 ;
+    padding:5px;
+    color:white;
+    box-shadow: 6px 2px 8px #463a39;
+}
+.tv_full a {
+    color:white;
+    padding: 6px 4px;
+    font-weight: bold;
+    font-size: 19px;
+    text-decoration:none;
+}
+.tv_full a:hover {
+    color:red;
+}
+.animage img {
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    box-shadow: 1px -2px 8px #007f3c;
+    border-radius: 10px;
+    margin: 4px 0 0 3px;
+    height: 92px;
+}
+.overlay {
+  position: absolute;
+    top: 4%;
+    bottom: 0;
+    right: 9%;
+    color: red;
+}
+.antitle {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+}
+.tvc {
+    background:#d1d2d4;
+    padding:30px;
+}
+
+
+/** Responsive **/
+@media (max-width:998px){
+
+.animage img {
+    height: 240px;
+ }
+.overlay i {
+    font-size: 31px;
+}
+
+} 
+</style>
+	
+	<video id="BD-IPTV" class="player">
+	
+	<source src="http://c1live.com:8081/c1live/mytv/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvMTcvMjAyMCAxMjowNzoyMiBQTSZoYXNoX3ZhbHVlPTJRMmZQNit2VjRrK2IxYTE1bWpQK2c9PSZ2YWxpZG1pbnV0ZXM9NQ==" title="Server1" type="application/x-mpegURL"/> </video>
+ 
+<script>
+
+fluidPlayer(
+   "BD-IPTV",
+    {
+        layoutControls: {
+			autoPlay:				true,
+			preload:                true,
+			doubleclickFullscreen:  true,
+            title:                  false,
+			keyboardControl:        true,
+			allowTheatre: 			false,
+			playPauseAnimation:     true,
+			playButtonShowing:      true,
+            fillToContainer:		true,
+			layout:                 "default",
+			primaryColor:			"#28B8ED",
+		
+            controlBar: {
+                autoHide:         		true,
+                autoHideTimeout:    	3,
+                animated:         		true,					
+						},
+			
+			playerInitCallback: (function() { console.log("player loaded!") }),	
+			
+
+		}
+    }
+);
+	
+ </script>
+  

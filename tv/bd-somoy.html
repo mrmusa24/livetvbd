@@ -1,0 +1,22 @@
+
+
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta charset="UTF-8" />
+<script type="text/javascript" src="../../cdn.jsdelivr.net/npm/clappr%40latest/dist/clappr.min.js"></script>
+<script type="text/javascript" src="../../cdn.jsdelivr.net/npm/clappr-chromecast-plugin%40latest/dist/clappr-chromecast-plugin.min.js"></script>
+<script type="text/javascript" src="../../cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin%40latest/dist/level-selector.min.js"></script>
+<style>[data-player] video {
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+}</style>
+<div id="player">
+</div>
+
+<script>
+
+var player = new Clappr.Player({source: " https://somoy.jaagobd.com:444/somoy/somoyt000011226615544544.stream/live-orgin/somoyt000011226615544544.stream/chunks.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTEvMTcvMjAyMCAxMjowNjo0MiBQTSZoYXNoX3ZhbHVlPVczN0pWUnQvNUc1OEl0MmVJdjJ6cmc9PSZ2YWxpZG1pbnV0ZXM9NQ==", parentId: "#player",autoPlay: true, plugins: [LevelSelector], 
+        width: "100%",
+        height: "100%" });
+
+</script>
